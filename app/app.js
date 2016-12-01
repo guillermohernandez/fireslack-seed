@@ -30,5 +30,15 @@ angular
       });
 
     $urlRouterProvider.otherwise('/');
+
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA5Bs3AmONkh0QFLbBqImK8cI1CV3Fya4M",
+      authDomain: "slacker-c4fc8.firebaseapp.com",
+      databaseURL: "https://slacker-c4fc8.firebaseio.com",
+      storageBucket: "slacker-c4fc8.appspot.com",
+      messagingSenderId: "465641563860"
+    };
+    firebase.initializeApp(config);
   })
   .constant('FirebaseUrl', 'https://slack.firebaseio.com/');
